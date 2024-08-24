@@ -38,30 +38,62 @@ First, go to Azure and create your virtual machine. Once created, use Remote Des
 <img src="https://i.imgur.com/W8pSnb9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next, download and install PHP Manager for IIS, the Rewrite Module, and PHP. When installing PHP, extract all files to C:\PHP.
+Next, download and install PHP Manager for IIS, the Rewrite Module, VC_redist, and PHP. When installing PHP, extract all files to C:\PHP.
 </p>
 <br />
 
 <p>
-<img src="https://imgur.com/E1Y45UW" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ge0HeaO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Wasdasdasdasdadasdasdasdadad
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Install MySQL and launch it after the installation is complete. Proceed with the standard setup and click 'Execute' to finalize the configuration.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/lfKqHqz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+From the Start menu, launch Internet Information Services (IIS) Manager as an administrator. Navigate to PHP Manager, and then register a new PHP version by selecting the executable you previously installed and Restart IIS.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/qr46nO5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Download osTicket, extract the 'upload' folder into inetpub\wwwroot, and rename it to 'osTicket,' so the path reads inetpub\wwwroot\osTicket. Restart IIS, then navigate to the osTicket folder in IIS Manager. From there, click 'Browse *:80' on the right-hand side.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/uiAJIjV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+We'll need to install some missing extensions. Open PHP Manager in osTicket and enable php_opcache, php_intl, and php_imap.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/FmkzwM1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Rename the ost-sampleconfig.php file located in wwwroot\osTicket\include to ost-config.php. Continue your setup of osTicket in the Browser then download and install HeidiSQL
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/4faAFfG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+With SQL open, click 'New' to create a new connection by logging in. Right-click 'Unnamed' and select 'Create a New Database,' then name it 'osTicket.'
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/n2GZ9Uc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Complete the setup in the osTicket browser interface, then click 'Install Now' to finish the installation. You're all set!
 </p>
 <br />
